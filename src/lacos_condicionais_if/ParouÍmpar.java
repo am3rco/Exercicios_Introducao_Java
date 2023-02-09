@@ -16,16 +16,13 @@ public class ParouÍmpar {
 	    if (number % 2 == 0) {
 	      if (number >= 0) {
 	        System.out.println("O número é par e positivo");
-	      } 
-	      else {
+	      } else {
 	        System.out.println("O número é par e negativo");
 	      }
-		}
-	    else {
+		} else {
 	    	if(number >=0 ) {
 	    		System.out.println("O número é ímpar e positivo");
-	        } 
-	    	else {
+	        } else {
 	          System.out.println("O número é ímpar e negativo");
 	    	}
 	    }
