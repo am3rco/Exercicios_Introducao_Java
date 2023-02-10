@@ -18,8 +18,13 @@ public class lacos_de_repeticoes_dowhile1 {
 
 			System.out.println("Digite um numero: ");
 			numero = leia.nextInt();
-			somaNumero += numero;
 
+			//Cria um Laço Condicional, para que se caso o numero for igual ou maior a zero, faça a soma
+			if (numero >= 0) {
+				somaNumero += numero;
+			}
+			
+			
 		} while (numero > 0);
 
 		System.out.printf("A soma dos números positivos é: %d", somaNumero);
