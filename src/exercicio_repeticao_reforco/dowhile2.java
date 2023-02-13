@@ -26,9 +26,6 @@ public class dowhile2 {
 				somaNumero += numero;
 				mediaNumero = somaNumero / quantidadeNumero;
 			} 
-			if(numero % 3 >0){
-				System.out.println("\nNenhum número multiplo de 3 foi inserido.");
-			}
 
 		} while (numero != 0);
 
