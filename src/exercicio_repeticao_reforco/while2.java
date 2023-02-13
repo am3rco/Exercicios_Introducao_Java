@@ -34,30 +34,31 @@ public class while2 {
 			System.out.println("3 – Se a pessoa era agressiva");
 			opcaoCaracteristica = leia.nextInt();
 			
+			// 
 			switch (opcaoCaracteristica) {
 			case 1:
 				totalPessoasCalmas++;
-				if (genero == 3) {
+				if (genero == 3) { // Incrementa total de outros calmos
 					totalOutrosCalmos++;
 				}
-				if (idade < 18) {
-					totalOutrosCalmos++;
+				if (idade < 18) { // incrementa total de pessoas calmas com menos de 18
+					totalPessoaCalmaMenos18++;
 				}
 				break;
 			case 2:
-				if (genero == 1) {
+				if (genero == 1) { // Incrementa o total de mulheres nervosas
 					totalMulherNervosa++;
 				}
-				if (idade > 40) {
+				if (idade > 40) { // Incrementa o total de pessoas nervosas com mais de 40
 					totalPessoaNervosaMais40++;
 				}
 				break;
 			case 3:
-				if (genero == 2) {
+				if (genero == 2) { // Incrementa o total de homens agressivos
 					totalHomemAgressivo++;
 				}
-				
-				
+			default:
+				break;
 			}
 			contador++;
 		}
@@ -67,8 +68,8 @@ public class while2 {
 		System.out.printf("\nTotal de mulheres nervosas: %d", totalMulherNervosa);
 		System.out.printf("\nTotal de homens agressivos: %d", totalHomemAgressivo);
 		System.out.printf("\nTotal de outros calmos: %d", totalOutrosCalmos);
-		System.out.printf("\nTotal de outros calmos: %d", totalPessoaNervosaMais40);
-		System.out.printf("\nTotal de outros calmos: %d", totalPessoaCalmaMenos18);
+		System.out.printf("\nTotal de pessoas nervosas com mais de 40 anos: %d", totalPessoaNervosaMais40);
+		System.out.printf("\nTotal de pessoas calmas com menos de 18 anos: %d", totalPessoaCalmaMenos18);
 
 	}
 
